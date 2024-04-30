@@ -1,0 +1,178 @@
+/* Atributos globales del proyecto, Letra de Google Font, tamaño y estilo, ademas del fondo gris */
+body {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    background-color: #f5f5f5;
+}
+
+/* Container que agrupa contenido principal, lo pintamos del fondo */
+
+.container{
+    background-color: #ffffff63;
+}
+
+/* Propiedades de la Barra para cumplir con el proposito de la formativa */
+/* Marcamos con css para que la barra funcione como links */
+
+/* Al posicionar el mouse cambiamos a negrita los links de paises  */
+.navbar-nav .nav-link h6 {
+    font-weight: bold; /* Estilo inicial de los países como negrita */
+}
+
+.navbar-nav .nav-link h6:hover {
+    font-weight: normal; /* Cuando el mouse está encima, eliminar negrita */
+}
+.nav-link{
+    text-align: center;
+}
+.navbar-nav{
+    justify-content: center;
+    width: 100%;
+}
+/* Contenedor flex para alinear elementos horizontalmente */
+.header-items {
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+}
+ /* Estilo adicional para los elementos h6 */
+ .header-items h6 {
+    margin: 0 10px; /* Añade espacio entre los elementos */
+}
+.header-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section{
+    margin-bottom: 2rem;
+    border-bottom:solid 1px grey;
+    width:100%;
+}
+
+/* Propiedad del Pie de seccion con la cantidad de articulos */
+
+.Cant{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+/* Propiedades del pie de pagina diferenciadas */
+
+footer{
+    background-color: #c9d2d0;
+    color:#31231e;
+    padding: 100px 0 80px ;
+    text-align: center;
+
+}
+
+/* Propiedades del live reloj */
+
+.titulo_reloj{
+    background-color: #f5f5f5;
+    display: flex;
+    text-align: center;
+    width: 50%;
+    margin:0 auto;
+}
+
+.reloj{
+    background-color: #f5f5f5;
+    display: flex;
+    text-align: center;
+    width: 100%;
+}
+
+.img-fluid{
+    display: flex;
+    justify-content: center;
+}
+
+#Botones{
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.Link-Oculto{
+    text-decoration: none;
+    color:black;
+}
+.border{
+    background-color: rgb(255, 255, 255);
+}
+/* reaordenar las noticias generales */
+.noticias-flex {
+    display: flex;
+}
+
+.noticia-pequena {
+    margin-bottom: 20px; /* Espacio entre las noticias pequeñas */
+}
+
+.noticia {
+    display: none;
+}
+.centered-content {
+    text-align: center;
+}
+
+.titulo-llamativo {
+    font-family:  'Honk', sans-serif;
+    font-size: 6rem;
+     }
+      /* Línea separadora sobre los países */
+       .nav-item {
+           border-top: 1px solid #ccc;
+           padding-top: 5px; /* Espacio adicional para separar la línea del texto */
+           border-bottom: 1px solid #ccc;
+        }
+
+          /* Línea separadora debajo de los países */
+             .nav-item:last-child {
+              
+              padding-bottom: 5px; /* Espacio adicional para separar la línea del texto */
+
+            }
+
+ 
+
+        #accesos a:hover {
+       color: #471c1c; /* Cambia el color del texto al pasar el mouse sobre el enlace */
+       font-weight: bold; /*negrita */
+    }
+    .accesos-container {
+       display: flex; /* Establece un contenedor de estilo flex */
+        justify-content: space-evenly; /* Distribuye los elementos horizontalmente con espacio entre ellos */
+        align-items: center; /* Centra verticalmente los elementos */
+    }
+
+    .accesos {
+
+       margin-right: 70px; /* Añade un margen derecho entre los elementos */
+       margin-left: 70px;
+       
+    }
+
+       .accesos a {
+          text-decoration: none; /* Elimina el subrayado del enlace */
+          color: #460d0d; /* Color inicial del texto */
+          transition: color 0.4s; /* Transición suave del color del texto */
+          font-weight: normal; /* Texto sin negrita por defecto */
+        }
+
+              .accesos a:hover {
+                color: #161515; /* Cambia el color del texto al pasar el mouse sobre el enlace */
+             font-weight: bold; /* Texto en negrita al pasar el mouse sobre el enlace */
+            }
+            a {
+               text-decoration: none; /* Elimina el subrayado */
+               color: inherit; /* Hereda el color del texto de su contenedor */
+            }
+
+
+

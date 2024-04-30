@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--doctype es una etiqueta que no necesita cierre y cuya funcion es facilitar informacion al servidor web que aloja pagina-->
+<html lang="en">
+<!--HTML es una etiqueta par  y es la etiqueta que cierra todo el documento HTML-->
+
+<head>
+    
+    <!-- es una etiqueta par , definira la cabecera del documento  y contiene informacion del mismo (meta datos scripts, estilos 
+         ubicacion de documentos de estilos, titulo de la pagina, entre otros)-->
+    <meta charset="UTF-8">
+    <meta name="author" content="noticias a tu alcance">
+    <!--la descripcion del sitio se descrive aqui -->
+    <meta name="description" content="diario de noticias actuales , deporte, negocios y todo lo que necesites saber ">
+    <!--title=es el nombre que va en el costado superior izquierdo de la pagina -->
+    <title>Diario El Faro</title>
+    <!--link= es el icono que va en el costado superior izquierdo de la pagina-->
+    <link rel="icon" type="image/png" href="icon/faroicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <script src="js/EnviarCorreo.js"></script>
+    <style>
+        .titulo-llamativo {
+           font-family:  'Honk', sans-serif;
+           font-size: 6rem;
+        }
+    </style>   
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1 class="titulo-llamativo" align="center">El Faro</h1>
+        </header>
+        <img src="../image/banner.jpg" class="img-fluid mt-3" href="../index.php">
+        <form method="POST" class="mt-3 p-3 border border-secondary rounded-2" action="../index.php?action=enviarMensaje">
+            <h5 align="center">Contacto</h5>
+            <div class="mb-3">
+                <label for="Titulo" class="form-label">Usuario</label>
+                <input type="text" class="form-control" required id="Nombre" name="nombreUsuario" placeholder="Usuario">
+            </div>
+            <div class="mb-3">
+                <label for="Email" class="form-label">Email</label>
+                <input type="email" class="form-control" required id="Email" name="correoE" placeholder="Email">
+            </div>
+            <div class="mb-3">
+                <label for="Mensaje" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="Mensaje" required name="Mensaje" rows="3"></textarea>
+            </div>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button hr class="btn btn-primary me-md-2" type="submit">Enviar</button>
+                <a href="../index.php" class="btn btn-secondary me-md-2" type="button">Cancelar</a>
+            </div>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+</body>
+
+<footer class="mt-5">
+    <h5>Realizado en 2024 por Estudiantes Jean Rodriguez, Roberto Vega </h5>
+</footer>
+
+</html>

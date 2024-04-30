@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<!--doctype es una etiqueta que no necesita cierre y cuya funcion es facilitar informacion al servidor web que aloja pagina-->
+<html lang="en">
+<!--HTML es una etiqueta par  y es la etiqueta que cierra todo el documento HTML-->
+
+<head>
+
+    <!-- es una etiqueta par , definira la cabecera del documento  y contiene informacion del mismo (meta datos scripts, estilos 
+         ubicacion de documentos de estilos, titulo de la pagina, entre otros)-->
+    <meta charset="UTF-8">
+    <meta name="author" content="noticias a tu alcance">
+    <!--la descripcion del sitio se descrive aqui -->
+    <meta name="description" content="diario de noticias actuales , deporte, negocios y todo lo que necesites saber ">
+    <!--title=es el nombre que va en el costado superior izquierdo de la pagina -->
+    <title>El Faro</title>
+    <!--link= es el icono que va en el costado superior izquierdo de la pagina-->
+    <link rel="icon" type="image/png" href="icon/faroicon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700,italic&display=swap">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="css/style.css">-->
+    <!--<link rel="stylesheet" href="ruta/a/google-fonts.css">
+        <link href="fuentes/static/Honk-Regular.ttf" rel="stylesheet" <link rel="preconnect"
+        href="https://fonts.googleapis.com"> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/Reloj.js"></script>
+    <script src="js/CargaDinamica.js"></script>
+    <script src="js/CargarArticulo.js"></script>
+
+    <style>
+
+    </style>
+
+
+</head>
+
+
+<body onload="mueveReloj(), CargarArticulos()">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto"> <!-- clase "ms-auto" para alinear los elementos a la derecha -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">
+                            <h6>Ultimas Noticias</h6>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Nacionales">
+                            <h6>Nacionales</h6>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Internacionales">
+                            <h6>Internacional</h6>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <form class="titulo_reloj" name="form_reloj">
+                            <input class="reloj" type="text" disabled="true" name="reloj" size="40" align="center">
+                        </form>
+                    </li>
+                </ul>
+            </div>
+    </nav>
+
+    <!--estructura del cuerpo de un sitio-->
+    <!--encabezado-->
+    <!--Contenedor donde esta el Cuerpo-->
+    <div class="container">
+        <header>
+            <h1 align="center"> <img src="image/simbolo el faro.jpg"></h1>
+            <!-- Contenedor de noticias -->
+            <!-- Línea separadora -->
+            <hr>
+        </header>
+        <div class="navbar navbar-expand-lg bg-body-tertiary mt-2">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="views/noticias.phtml">Invasión de Rusia a Ucrania</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="views/noticias2.phtml">Crisis en Venezuela</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="views/noticias3.phtml">Guerra en Medio Oriente</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="views/noticias4.phtml">Inteligencia artificial</a>
+                </li>
+              </ul>
+        </div>
+        <hr>
+        <div style="margin-bottom: 2rem;">
+            <a href="https://www.entel.cl"><img src="image/publicidad.png" class="img-fluid mt-3"></a>
+        </div>
+        <hr>
+        <!--barra de navegacion-->
+        <section id="inicio">
+            <!-- Contenido de la sección de Inicio -->
+            <div id="Portada">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div id="Principal"></div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="row">
+                            <div id="Contenido_1"></div>
+                        </div>
+                        <div class="row mt-2">
+                            <div id="Contenido_2"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-3" id="Items">
+                    
+                </div>
+            </div>
+        </section>
+
+        <section id="Nacionales">
+            <h2 align="center">Nacional</h2>
+            <div class="row" id="Nacional">
+
+            </div>
+        </section>
+
+        <section id="Internacionales">
+            <h2 align="center">Internacional</h2>
+            <div class="row" id="Internacional">
+
+            </div>
+        </section>
+
+        <div id="Botones">
+            <button type="button" class="btn btn-primary m-1" data-bs-toggle="modal" data-bs-target="#AgregarInicio">
+                Agregar Articulo
+            </button>
+
+            <div class="modal fade" id="AgregarInicio" tabindex="-1" aria-labelledby="Generales" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="Generales">Agregar Articulo</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="mx-5 mt-2">
+                            <div class="mb-3">
+                                <label for="Area" class="form-label">Seleccione el Area</label>
+                                <select class="form-select" id="Area" aria-label="Area">
+                                    <option value="General">Portada</option>
+                                    <option value="Deporte">Nacional</option>
+                                    <option value="Negocio">Internacional</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="Titulo" class="form-label">Titulo</label>
+                                <input type="text" class="form-control" id="Titulo" placeholder="Titulo">
+                            </div>
+                            <div class="mb-3">
+                                <label for="Descripcion" class="form-label">Descripcion</label>
+                                <textarea class="form-control" id="Descripcion" rows="3"></textarea>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" onclick="AgregarArticulo()"
+                                data-bs-dismiss="modal">Agregar</button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="btn btn-secondary m-1" href="views/Contacto.phtml">Contacto</a>
+            <a class="btn btn-secondary m-1" href="views/Registro.phtml">Registro</a>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+
+    </div>
+    
+
+    <footer class="mt-5" id="Pie">
+        <h5>Realizado en 2024 por Estudiantes Jean Rodriguez, Roberto Vega </h5>
+    </footer>
+
+
+</body>
+
+
+</html>

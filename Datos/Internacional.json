@@ -1,0 +1,20 @@
+[
+    {"Titulo":"González Urrutia aceptó candidatura presidencial de coalición antichavista",
+     "Categoria": "Internacional",
+     "Contenido":"El opositor venezolano Edmundo González Urrutia dijo este domingo que acepta el inmenso honor de ser el candidato de la Plataforma Unitaria Democrática (PUD), principal coalición antichavista, para los comicios presidenciales del 28 de julio, en sustitución de María Corina Machado, quien está inhabilitada para ejercer cargos de elección popular.",
+     "Imagen":"image/Internacional 1.jpg",
+     "Link":"index.php"},
+
+     {"Titulo":"Hamás propone fundar un Estado palestino unificado bajo una OLP reorganizada",
+      "Categoria":"Internacional",
+      "Contenido":"Este lunes se votará la censura a la presidencia de la Cámara de Diputadas y Diputadas y Chile Vamos mantiene sus críticas al Partido Republicano y el partido Social Cristiano, pese a que entregarán su voto a favor de la moción.",
+      "Imagen":"image/Internacional 2.jpg",
+      "Link":"index.php"},
+
+     {"Titulo":"Ataques israelíes en Gaza dejaron 48 muertos y 79 heridos en las últimas 24 horas",
+      "Categoria":"Internacional",
+      "Contenido":"Los ataques israelíes de las últimas 24 horas dejaron un saldo de 48 muertos y 79 heridos en la Franja de Gaza, según los datos proporcionados este domingo por el Ministerio de Sanidad gazatí, controlado por Hamás.",
+      "Imagen":"image/Internacional 3.jpg",
+      "Link":"index.php"}
+
+]

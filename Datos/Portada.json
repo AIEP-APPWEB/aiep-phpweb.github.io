@@ -1,0 +1,43 @@
+[
+    {"Titulo":"Cuáles son las sencillas técnicas que pueden reducir el estrés y la ansiedad, según un experto en bienestar",
+     "Categoria": "Titulares",
+     "Contenido":"El referente del mindfulness y experto en meditación, Silvio Raij, habló con Infobae sobre las principales preocupaciones del siglo XXI y brindó detalles sobre cómo incorporar ejercicios prácticos a nuestra vida para alcanzar una vida plena",
+     "Imagen":"image/grande 1.jpg",
+     "Link":"index.php"},
+
+     {"Titulo":"Escribir para sanar: por qué esta práctica ayuda a superar las emociones negativas, según los expertos",
+      "Categoria":"Titulares",
+      "Contenido":"Escribir para sanar: por qué esta práctica ayuda a superar las emociones negativas, según los expertos",
+      "Imagen":"image/pequeña 1.jpg",
+      "Link":"index.php"},
+
+     {"Titulo":"Cuál es el condimento que ayuda a mejorar la memoria y alivia la inflamación",
+      "Categoria":"Titulares",
+      "Contenido":"Cuál es el condimento que ayuda a mejorar la memoria y alivia la inflamación",
+      "Imagen":"image/pequeña 2.jpg",
+      "Link":"index.php"},
+
+      {"Titulo":"Los ecuatorianos votan en una consulta popular que puede marcar el futuro político de Daniel Noboa",
+      "Categoria":"Titulares",
+      "Contenido":"Deben dar su veredicto sobre once preguntas. Según el gobierno, su aprobación es vital para el combate al narcoterrorismo y el fomento de las inversiones.",
+      "Imagen":"image/noticia ecuador.jpg",
+      "Link": "index.php"},
+
+      {"Titulo":"Escándalo en campaña de Petro: CNE destapó pagos no declarados a 35.000 testigos electorales",
+      "Categoria":"Titulares",
+      "Contenido":"El Consejo Nacional Electoral se estaría preparando para presentar las primeras investigaciones, que podrían concluir en la formulación de cargos contra el mandatario nacional y el presidente de Ecopetrol.",
+      "Imagen":"image/Noticia colombia.jpg",
+      "Link": "index.php"},
+
+      {"Titulo":"Elecciones País Vasco 2024, en directo: sigue minuto a minuto la jornada electoral",
+      "Categoria":"Titulares",
+      "Contenido":"Este domingo 21 de abril, los vascos eligen nuevo Gobierno. PNV y Bildu llegan muy igualados, según las encuestas: los primeros aspiran a repetir la mayoría absoluta en coalición con el PSOE de Euskadi.",
+      "Imagen":"image/noticia españa.jpg",
+      "Link": "index.php"},
+
+      {"Titulo":"Dina Boluarte no volverá a tener “viajes exploratorios” porque “es consciente que cometió errores”, dice canciller",
+      "Categoria":"Titulares",
+      "Contenido":"Ministro de Relaciones Exteriores, Javier González-Olaechea,descartó que Dina Boluarte vuelva a salir al extranjero a menos que sea necesario. Medida se da tras millones de soles gastados durante el 2023 en viajes para ella y toda su comitiva",
+      "Imagen":"image/noticia peru.jpg",
+      "Link": "index.php"}
+]

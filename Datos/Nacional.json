@@ -1,0 +1,20 @@
+[
+    {"Titulo":"Huachipato revirtió suspensión indefinida de sus operaciones",
+     "Categoria": "Nacional",
+     "Contenido":"La Compañía Siderúrgica Huachipato (CSH) revirtió la suspensión indefinida de sus operaciones, anunciada a fines de marzo, después de que la Comisión Antidistorsiones accediera a imponer las sobretasas arancelarias que solicitó -junto con MolyCop- para el acero chino.",
+     "Imagen":"image/Nacional 1.png",
+     "Link":"index.php"},
+
+     {"Titulo":"Oposición se mantiene dividida ante censura a mesa de la Cámara Baja: se vota este lunes",
+      "Categoria":"Nacional",
+      "Contenido":"Este lunes se votará la censura a la presidencia de la Cámara de Diputadas y Diputadas y Chile Vamos mantiene sus críticas al Partido Republicano y el partido Social Cristiano, pese a que entregarán su voto a favor de la moción.",
+      "Imagen":"image/Nacional 2.jpeg",
+      "Link":"index.php"},
+
+     {"Titulo":"Diputado UDI puso en duda apoyo de Chile Vamos a Desbordes en Santiago",
+      "Categoria":"Nacional",
+      "Contenido":"El diputado Guillermo Ramírez (UDI) puso en duda el apoyo de Chile Vamos a Mario Desbordes como candidato a alcalde por Santiago, pese a que fue el propio exministro de Defensa quien confirmó ayer que era respaldado por toda la coalición para esta campaña.",
+      "Imagen":"image/Nacional 3.jpeg",
+      "Link":"index.php"}
+
+]

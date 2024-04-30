@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!--doctype es una etiqueta que no necesita cierre y cuya funcion es facilitar informacion al servidor web que aloja pagina-->
+<html lang="en">
+<!--HTML es una etiqueta par  y es la etiqueta que cierra todo el documento HTML-->
+
+<head>
+
+    <!-- es una etiqueta par , definira la cabecera del documento  y contiene informacion del mismo (meta datos scripts, estilos 
+         ubicacion de documentos de estilos, titulo de la pagina, entre otros)-->
+    <meta charset="UTF-8">
+    <meta name="author" content="noticias a tu alcance">
+    <!--la descripcion del sitio se descrive aqui -->
+    <meta name="description" content="diario de noticias actuales , deporte, negocios y todo lo que necesites saber ">
+    <!--title=es el nombre que va en el costado superior izquierdo de la pagina -->
+    <title>Diario El Faro</title>
+    <!--link= es el icono que va en el costado superior izquierdo de la pagina-->
+    <link rel="icon" type="image/png" href="icon/faroicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <script src="js/EnviarCorreo.js"></script>
+
+    <style>
+        .titulo-llamativo {
+            font-family: 'Honk', sans-serif;
+            font-size: 6rem;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1 align="center"> <img src="../image/simbolo el faro.jpg" ></h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1><b>Guerra en Medio Oriente</b></h1>
+        <hr>
+        <section id="inicio">
+            <div class="row">
+                <div class="col-lg-6">
+                    <!-- Contenido de la noticia grande -->
+                    <div class="noticia-grande">
+                        <h3><b>NRobots humanoides por menos de USD 20.000 prometen revolucionar
+                                la vida cotidiana y la industria, según CEO de Nvidia</b></h3>
+                        <h5>A precio de un auto, Jensen Huang sugiere que los humanoides,
+                            económicos y eficientes, podrían transformar desde tareas domésticas
+                            hasta operaciones en fábricas, revolucionando nuestra
+                            vida diaria y los entornos industriales</h5>
+                        <img src="../image/tecnologia grande.jpg" class="img-fluid">
+                        <h6> Jensen Huang comparte su visión sobre el impacto de la IA y
+                            la computación acelerada. REUTERS/Edgar Su/Archivo </h6>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <!-- Contenido de las noticias pequeñas -->
+                    <!-- Contenido de la primera noticia pequeña -->
+                    <div class="noticia-pequena">
+                        <h5><b>Zoom mejor gracias a la IA: resúmenes, extracción de tareas y más nuevas funciones</b>
+                        </h5>
+                        <h7>La plataforma usará inteligencia artificial para mejorar la iluminación en las videollamadas
+                        </h7>
+                        <img src="../image/tecno pequeña 1.jpg" class="img-fluid">
+                    </div>
+                    <hr>
+                    <!-- Contenido de la segunda noticia pequeña -->
+                    <div class="noticia-pequena">
+                        <h5><b>Astrofísico advierte sobre la IA como potencial fin de la civilización:
+                                ¿podría matarnos dentro de 200 años?.</b></h5>
+                        <h7>Michael Garrett, en un reciente estudio, sugiere que el avance descontrolado
+                            de la inteligencia artificial podría significar un riesgo
+                            catastrófico para la civilización humana y extraterrestre.</h7>
+                        <img src="../image/tecno pequeña 2.jpg" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </section>
+    <hr>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <a href="../index.php" class="btn btn-secondary me-md-2" type="button">atras</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+<footer class="mt-5">
+    <h5>Realizado en 2024 por Estudiantes Jean Rodriguez, Roberto Vega</h5>
+</footer>
+
+
+</html>

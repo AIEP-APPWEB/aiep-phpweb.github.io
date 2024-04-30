@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!--doctype es una etiqueta que no necesita cierre y cuya funcion es facilitar informacion al servidor web que aloja pagina-->
+<html lang="en">
+<!--HTML es una etiqueta par  y es la etiqueta que cierra todo el documento HTML-->
+
+<head>
+
+    <!-- es una etiqueta par , definira la cabecera del documento  y contiene informacion del mismo (meta datos scripts, estilos 
+         ubicacion de documentos de estilos, titulo de la pagina, entre otros)-->
+    <meta charset="UTF-8">
+    <meta name="author" content="noticias a tu alcance">
+    <!--la descripcion del sitio se descrive aqui -->
+    <meta name="description" content="diario de noticias actuales , deporte, negocios y todo lo que necesites saber ">
+    <!--title=es el nombre que va en el costado superior izquierdo de la pagina -->
+    <title>Diario El Faro</title>
+    <!--link= es el icono que va en el costado superior izquierdo de la pagina-->
+    <link rel="icon" type="../image/png" href="icon/faroicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <script src="js/EnviarCorreo.js"></script>
+
+    <style>
+        .titulo-llamativo {
+            font-family: 'Honk', sans-serif;
+            font-size: 6rem;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1 align="center"> <img src="../image/simbolo el faro.jpg"></h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1><b>Guerra Rusia Ucrania</b></h1>
+        <hr>
+        <section id="inicio">
+            <div class="row">
+                <div class="col-lg-6">
+                    <!-- Contenido de la noticia grande -->
+                    <h3><b>Ucrania denunció que 545 niños murieron por la invasión rusa</b></h3>
+                    <h5>La fiscalía general ucraniana confirmó también que 1.289 menores de edad resultaron heridos
+                        desde el inicio del conflicto en febrero de 2022</h5>
+                    <img src="../image/niños en guerra.jpg" class="img-fluid">
+                    <h6>La Fiscalía General de Ucrania denunció este sábado que desde el inicio de la invasión rusa, en
+                        febrero de 2022, 545 niños han muerto a raíz de este conflicto mientras que 1.289 resultaron
+                        heridos.</h6>
+                </div>
+                <div class="col-lg-6">
+                    <!-- Contenido de las noticias pequeñas -->
+                    <div class="row">
+                        <!-- Contenido de la primera noticia pequeña -->
+                        <div class="noticia-pequena">
+                            <h6><b>La OTAN, la UE y Zelensky celebraron la aprobación de la asistencia
+                                    militar estadounidense a Ucrania en la Cámara de Representantes.</b></h6>
+                            <img src="../image/guerra ucrania 1 pequeño.jpg" class="img-fluid">
+                            <h6>Legisladores votaron a favor de la iniciativa que llevaba semanas
+                                estancada y que ahora sólo resta que sea debatida en el Senado antes de ser
+                                promulgada</h6>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <!-- Contenido de la segunda noticia pequeña -->
+                        <div class="noticia-pequena">
+                            <h6><b>Ucrania atacó con drones una infraestructura energética en Rusia</b></h6>
+                            <img src="../image/guerra ucrania imagen pequeña 2.jpg" class="img-fluid">
+                            <h6>El bombardeo fue una operación conjunta de los servicios de seguridad
+                                ucranianos, los de inteligencia militar y las fuerzas armadas</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <a href="../index.php" class="btn btn-secondary me-md-2" type="button">atras</a>
+                    <?php echo(urlencode($enlace_actual)) ?>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+
+<footer class="mt-5">
+    <h5>Realizado en 2024 por Estudiantes Jean Rodriguez, Roberto Vega</h5>
+</footer>
+
+</html>
